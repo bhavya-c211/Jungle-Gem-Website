@@ -4,15 +4,57 @@ Online storefront for **Jungle Gem Plant Co.**, a woman-owned specialty plant sh
 
 Plain HTML/CSS/JS — no build step, no framework, nothing to install.
 
-## Run it locally
+## Team setup (start here)
 
-From this folder:
+### 1. Get access
+
+This repo is **private**. You need a free GitHub account ([github.com/signup](https://github.com/signup)).
+
+1. Send your **GitHub username** to Bhavya so you can be added.
+2. Accept the invite — it comes by email, or check [github.com/notifications](https://github.com/notifications).
+3. Open <https://github.com/bhavya-c211/Jungle-Gem-Website> — if you see the files, you're in.
+
+### 2. Get the code — pick one
+
+**A. Just want to look? Download a ZIP (nothing to install)**
+On the repo page: green **Code** button → **Download ZIP** → unzip it anywhere.
+⚠️ This is a snapshot — it won't update. Download again to see newer changes.
+
+**B. Going to make changes? Use GitHub Desktop (easiest)**
+1. Install [GitHub Desktop](https://desktop.github.com) and sign in with your GitHub account.
+2. **File → Clone repository** → pick `bhavya-c211/Jungle-Gem-Website` → choose a folder → **Clone**.
+3. To get teammates' latest changes later: **Fetch origin** → **Pull origin**.
+
+**C. Comfortable with the terminal?**
+```bash
+git clone https://github.com/bhavya-c211/Jungle-Gem-Website.git
+```
+
+### 3. View the site on your computer
+
+**Quickest:** open the folder and **double-click `index.html`**. It opens in your browser and every page works.
+
+**Same as it'll run when hosted (optional):** open a terminal *in the project folder* and run:
 
 ```bash
 python -m http.server 5173
 ```
 
-Then open <http://localhost:5173>. (Opening the `.html` files directly also mostly works, but a local server matches how it'll be hosted.)
+(Mac: use `python3` instead of `python`.) Then go to <http://localhost:5173>. Press **Ctrl + C** in the terminal to stop it.
+If you get "python not found", install it from [python.org](https://www.python.org/downloads/) — on Windows, tick **"Add python.exe to PATH"** during install.
+
+**Using VS Code?** Install the **Live Server** extension, right-click `index.html` → **Open with Live Server**. The page refreshes itself when you save.
+
+**Changes not showing?** Hard-refresh: **Ctrl + Shift + R** (Mac: **Cmd + Shift + R**).
+
+### 4. Making changes as a team
+
+1. **Pull first**, every time you start (GitHub Desktop: *Fetch origin* → *Pull*).
+2. Make your edits and check them in the browser.
+3. **Commit** with a clear message (e.g. "Add real prices for October inventory") → **Push**.
+4. Say what you changed in the group chat — and avoid two people editing the same file at the same time (especially `css/styles.css` and `js/main.js`), or you'll have to merge by hand.
+
+New to Git? GitHub Desktop handles all of this with buttons — no commands needed.
 
 ## Pages
 
