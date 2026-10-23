@@ -8,6 +8,8 @@ Budget reality: this is a student team project with a 40–60 hour/person total 
 
 ## Current state
 
+**Repo:** https://github.com/bhavya-c211/Jungle-Gem-Website (private, branch `main`). Teammates get access via Settings → Collaborators. On this machine the remote URL includes `bhavya-c211@` because another GitHub account (`bhavyac-211`) is also saved in Windows Credential Manager.
+
 Static multi-page site (decided: separate pages, not one scroll — each page is a real URL people can bookmark and QR codes can point to). Preview locally with `python -m http.server` from this folder (the session's `.claude/launch.json` config "site" does this).
 
 - `index.html` — Home: hero (arched photo, spinning badge, hanging price tag, live in-stock counts), plant-name ticker, seasonal NRV note (changes by month), featured plants, "shop by space" photo tiles (dorm / pet-safe / sunny window), visit strip with live open/closed, **top-4 Questions** (tap to expand; full list on visit.html#faq — keep answers in sync), **newsletter plant spotlight**, newsletter signup.
