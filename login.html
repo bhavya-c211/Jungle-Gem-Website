@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account — Jungle Gem Plant Co.</title>
+<meta name="description" content="Sign in to Jungle Gem Plant Co. to save your cart and see your pickups.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0A0C09">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0C09'/%3E%3Cpath d='M16 5 L27 16 L16 27 L5 16 Z' fill='none' stroke='%23CFBD8C' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,500&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=20261020l">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar">Pickup in Christiansburg &middot; Now shipping, 2-Day or faster &middot; <a href="visit.html#shipping">Shipping info</a></div>
+
+<header>
+  <nav aria-label="Main">
+    <a class="logo" href="index.html"><img src="assets/logo-sm.webp" alt="Jungle Gem Plant Co." width="553" height="419"></a>
+    <div class="nav-links">
+      <div class="dd" data-dd>
+        <a href="shop.html">Shop</a>
+        <button class="dd-btn" type="button" aria-expanded="false" aria-controls="shop-menu" aria-label="Shop categories">
+          <svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <div class="dd-menu" id="shop-menu">
+          <div class="dd-links">
+            <span class="dd-label">Shop by</span>
+            <a href="shop.html">All plants <span data-stat="count"></span></a>
+            <a href="shop.html?light=low">Low light</a>
+            <a href="shop.html?light=medium">Medium light</a>
+            <a href="shop.html?light=bright">Bright light</a>
+            <a href="shop.html?pet=1">Pet-safe <span data-stat="pet"></span></a>
+            <a href="shop.html?small=1">Dorm &amp; desk</a>
+          </div>
+          <a class="dd-feature" href="care.html#monstera">
+            <img src="https://images.unsplash.com/photo-1636525653613-2a3a05c00759?w=360&amp;h=440&amp;fit=crop&amp;auto=format&amp;q=70" alt="" loading="lazy" width="360" height="440">
+            <span class="dd-label">Care sheets</span>
+            <strong>Every tag, scannable &rarr;</strong>
+          </a>
+        </div>
+      </div>
+      <a href="care.html">Care</a>
+      <div class="dd" data-dd>
+        <a href="visit.html">Visit</a>
+        <button class="dd-btn" type="button" aria-expanded="false" aria-controls="visit-menu" aria-label="Visit sections">
+          <svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+        <div class="dd-menu" id="visit-menu">
+          <div class="dd-links">
+            <span class="dd-label">Visit</span>
+            <a href="visit.html#hours">Hours &amp; location</a>
+            <a href="visit.html#directions">Getting here</a>
+            <a href="visit.html#shipping">Shipping</a>
+            <a href="visit.html#faq">Questions</a>
+            <a href="visit.html#newsletter">Newsletter</a>
+          </div>
+          <a class="dd-feature dd-sign" href="visit.html#hours">
+            <span class="dd-label">Right now</span>
+            <strong class="dd-status" data-open-now>Open now</strong>
+            <span class="dd-hours">Tue&ndash;Sat<br>10am&ndash;6pm</span>
+            <span class="dd-hours">1035 Cambria St NE<br>Christiansburg, VA</span>
+            <span class="dd-hours">(540) 922-7673</span>
+          </a>
+        </div>
+      </div>
+      <span class="nav-icons">
+        <a class="icon-link" href="login.html" aria-label="Account" aria-current="page">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </a>
+        <a class="icon-link" href="cart.html" aria-label="Cart">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+      </span>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap" id="main">
+
+  <section class="hero page auth">
+    <div class="auth-card">
+      <span class="eyebrow">Account</span>
+      <h1>Welcome <em>back</em>.</h1>
+
+      <div class="tabs" role="tablist" aria-label="Account">
+        <button class="tab" role="tab" id="tab-in" aria-selected="true" aria-controls="pane-in" type="button" data-tab="in">Sign in</button>
+        <button class="tab" role="tab" id="tab-up" aria-selected="false" aria-controls="pane-up" type="button" data-tab="up">Create account</button>
+      </div>
+
+      <!-- FRONT-END ONLY. No auth backend exists yet; nothing is sent or stored.
+           Pick a provider with the team before wiring this up (see CLAUDE.md). -->
+      <form class="auth-form" id="pane-in" role="tabpanel" aria-labelledby="tab-in" data-auth novalidate>
+        <label>Email<input class="field" type="email" name="email" autocomplete="email" required></label>
+        <label>Password<input class="field" type="password" name="password" autocomplete="current-password" required></label>
+        <button class="btn" type="submit">Sign in &rarr;</button>
+      </form>
+      <form class="auth-form" id="pane-up" role="tabpanel" aria-labelledby="tab-up" data-auth novalidate hidden>
+        <label>Name<input class="field" name="name" autocomplete="name" required></label>
+        <label>Email<input class="field" type="email" name="email" autocomplete="email" required></label>
+        <label>Password<input class="field" type="password" name="password" autocomplete="new-password" minlength="8" required></label>
+        <label class="check"><input type="checkbox" name="news"> The newsletter &mdash; a plant spotlight every issue</label>
+        <button class="btn" type="submit">Create account &rarr;</button>
+      </form>
+      <p class="form-msg" role="status" aria-live="polite" data-auth-msg></p>
+      <p class="auth-alt">No account needed to order &mdash; <a href="cart.html">go to cart &rarr;</a></p>
+    </div>
+
+    <div class="auth-art" aria-hidden="true">
+      <figure class="arch"><img src="https://images.unsplash.com/photo-1636732583848-7c68dd07a275?w=640&amp;h=820&amp;fit=crop&amp;auto=format&amp;q=70" alt="" width="640" height="820"></figure>
+      <ul class="perks">
+        <li><span>01</span>Cart saved across devices</li>
+        <li><span>02</span>Pickup history &amp; receipts</li>
+        <li><span>03</span>Care reminders for your plants</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <a class="logo logo-foot" href="index.html"><img src="assets/logo-sm.webp" alt="Jungle Gem Plant Co. home" width="553" height="419" loading="lazy"></a>
+  <nav aria-label="Footer">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="care.html">Plant Care</a>
+    <a href="visit.html#shipping">Shipping</a>
+    <a href="https://www.instagram.com/junglegemplantco/" target="_blank" rel="noopener">Instagram</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+  <span class="meta">1035 Cambria St NE, Christiansburg, VA &middot; <a href="tel:+15409227673">(540) 922-7673</a> &middot; &copy; <span data-year>2026</span></span>
+</footer>
+
+<script src="js/plants.js?v=20261020l"></script>
+<script src="js/main.js?v=20261020l"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+  Jungle Gem Plant Co. — newsletter "Plant Spotlight" email template
+  (client meeting 9/17: start an email list, spotlight one plant per issue).
+
+  HOW TO USE
+  1. Replace every {{PLACEHOLDER}} below. Example values (Nov 2026 issue) are in
+     the comment next to each one; they match SPOTLIGHT in js/plants.js.
+  2. Images must be absolute https:// URLs (email clients can't load local files).
+     After the site is hosted, {{SITE_URL}}/assets/logo-email.png is the logo.
+  3. Paste into your email service's "custom HTML" editor (Mailchimp, Brevo,
+     MailerLite, etc. — the team hasn't picked one yet).
+  4. Keep the footer: US law (CAN-SPAM) requires a physical address and an
+     unsubscribe link. Most services fill {{UNSUBSCRIBE_URL}} with their own tag.
+
+  Built with tables + inline styles on purpose: that's what email clients render
+  reliably. Colors match the site (dark, green, taupe, cream).
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>{{PLANT_NAME}} — Jungle Gem Plant Co.</title>
+</head>
+<body style="margin:0; padding:0; background:#0A0C09;">
+  <!-- Preheader: the preview line shown in the inbox. Example: "Calathea: patterned, pet-safe, and in stock now." -->
+  <div style="display:none; max-height:0; overflow:hidden; opacity:0;">{{PREHEADER}}</div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0A0C09;">
+    <tr><td align="center" style="padding:24px 12px;">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:600px;">
+
+        <!-- top strip -->
+        <tr><td style="background:#CFBD8C; color:#1A1E0D; font-family:'Courier New',monospace; font-size:12px; text-align:center; padding:8px 12px;">
+          Pickup in Christiansburg &middot; Shipping 2-Day or faster
+        </td></tr>
+
+        <!-- logo -->
+        <tr><td align="center" style="padding:32px 24px 8px;">
+          <a href="{{SITE_URL}}"><img src="{{SITE_URL}}/assets/logo-email.png" width="140" alt="Jungle Gem Plant Co." style="display:block; border:0; width:140px; height:auto;"></a>
+        </td></tr>
+
+        <!-- issue label -->
+        <tr><td align="center" style="font-family:'Courier New',monospace; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#B9A789; padding:16px 24px 24px;">
+          Plant Spotlight &middot; {{ISSUE}} <!-- e.g. November 2026 -->
+        </td></tr>
+
+        <!-- photo -->
+        <tr><td style="padding:0 24px;">
+          <img src="{{PLANT_PHOTO_URL}}" width="552" alt="{{PLANT_NAME}}" style="display:block; width:100%; max-width:552px; height:auto; border:0; border-radius:276px 276px 2px 2px;">
+        </td></tr>
+
+        <!-- name + note -->
+        <tr><td style="padding:28px 24px 0; font-family:Georgia,'Times New Roman',serif; color:#ECE6D6;">
+          <div style="font-size:40px; line-height:1.05;">{{PLANT_NAME}}<span style="color:#CFBD8C;">.</span></div> <!-- e.g. Calathea -->
+          <div style="font-family:'Courier New',monospace; font-size:13px; font-style:italic; color:#AAA587; padding-top:6px;">{{BOTANICAL_NAME}}</div> <!-- e.g. Goeppertia spp. -->
+          <p style="font-family:Arial,Helvetica,sans-serif; font-size:17px; line-height:1.55; color:#ECE6D6; margin:18px 0 0;">{{SPOTLIGHT_NOTE}}</p>
+          <!-- e.g. Patterned leaves that fold up at night. Pet-safe. Wants humidity once the heat comes on. -->
+        </td></tr>
+
+        <!-- care facts: the plant tag -->
+        <tr><td style="padding:24px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#F2EBD9; color:#1A1E0D;">
+            <tr>
+              <td width="33%" style="padding:16px; border-right:1px dashed #b8b2a2;">
+                <div style="font-family:'Courier New',monospace; font-size:11px; letter-spacing:1.5px; color:#4F513A;">LIGHT</div>
+                <div style="font-family:Arial,Helvetica,sans-serif; font-size:15px; font-weight:bold; padding-top:4px;">{{LIGHT}}</div> <!-- e.g. Medium -->
+              </td>
+              <td width="33%" style="padding:16px; border-right:1px dashed #b8b2a2;">
+                <div style="font-family:'Courier New',monospace; font-size:11px; letter-spacing:1.5px; color:#4F513A;">WATER</div>
+                <div style="font-family:Arial,Helvetica,sans-serif; font-size:15px; font-weight:bold; padding-top:4px;">{{WATER}}</div> <!-- e.g. Weekly -->
+              </td>
+              <td width="34%" style="padding:16px;">
+                <div style="font-family:'Courier New',monospace; font-size:11px; letter-spacing:1.5px; color:#4F513A;">PETS</div>
+                <div style="font-family:Arial,Helvetica,sans-serif; font-size:15px; font-weight:bold; padding-top:4px;">{{PETS}}</div> <!-- e.g. Safe -->
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- buttons -->
+        <tr><td style="padding:0 24px 8px;">
+          <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td style="background:#898660; border-radius:2px;">
+                <a href="{{SHOP_URL}}" style="display:inline-block; padding:14px 24px; font-family:Arial,Helvetica,sans-serif; font-size:15px; font-weight:bold; color:#0A0C09; text-decoration:none;">Shop it &rarr;</a>
+                <!-- e.g. {{SITE_URL}}/shop.html?q=Calathea -->
+              </td>
+              <td width="10"></td>
+              <td style="border:1px solid #ECE6D6; border-radius:2px;">
+                <a href="{{CARE_URL}}" style="display:inline-block; padding:13px 22px; font-family:Arial,Helvetica,sans-serif; font-size:15px; font-weight:bold; color:#ECE6D6; text-decoration:none;">Care sheet</a>
+                <!-- e.g. {{SITE_URL}}/care.html#goeppertia -->
+              </td>
+            </tr>
+          </table>
+        </td></tr>
+
+        <!-- local note (optional — delete this row if not needed) -->
+        <tr><td style="padding:24px 24px 0;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #292E16;">
+            <tr><td style="padding-top:20px; font-family:'Courier New',monospace; font-size:11px; letter-spacing:1.5px; color:#CFBD8C;">HERE IN THE NRV</td></tr>
+            <tr><td style="padding-top:6px; font-family:Arial,Helvetica,sans-serif; font-size:15px; line-height:1.55; color:#AAA587;">{{LOCAL_TIP}}</td></tr>
+            <!-- e.g. Run a humidifier once the heat kicks on in November. -->
+          </table>
+        </td></tr>
+
+        <!-- footer -->
+        <tr><td style="padding:40px 24px 16px; font-family:'Courier New',monospace; font-size:12px; line-height:1.7; color:#AAA587; text-align:center;">
+          Jungle Gem Plant Co. &middot; Woman-owned &middot; 1035 Cambria St NE, Christiansburg, VA 24073<br>
+          Tue&ndash;Sat, 10am&ndash;6pm &middot; <a href="tel:+15409227673" style="color:#B9A789;">(540) 922-7673</a><br>
+          <a href="mailto:hello@junglegemplantco.com" style="color:#B9A789;">hello@junglegemplantco.com</a> &middot; <a href="https://www.instagram.com/junglegemplantco/" style="color:#B9A789;">@junglegemplantco</a><br><br>
+          You&rsquo;re getting this because you signed up at the shop or on our site.<br>
+          <a href="{{UNSUBSCRIBE_URL}}" style="color:#B9A789;">Unsubscribe</a>
+        </td></tr>
+
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>
